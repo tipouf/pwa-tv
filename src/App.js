@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Main from './lib/main';
+import ResponsiveDrawer from './lib/drawer';
 
-function App() {
+export default function App() {
+  const [flux, setFlux] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ResponsiveDrawer onSelectFlux={setFlux}/>
+      <div>
+        <Main flux={flux}/>
+      </div>
     </div>
   );
 }
 
-export default App;

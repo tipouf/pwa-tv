@@ -1,0 +1,72 @@
+{
+    "1": {
+        "number": 1,
+        "name": "France24",
+        "language": "FR",
+        "url": "http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8?streamType=live",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/1200px-Logos_FRANCE24_RVB_2013.svg.png"
+           },
+    "2": {
+        "number": 2,
+        "name": "REDBULL",
+        "language": "EN",
+        "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8?xtreamiptv.m3u8?streamType=live",
+        "logo": "https://d3g9pb5nvr3u7.cloudfront.net/sites/5581c33e4f73705f2f7791db/1420915272/256.png"
+           },
+    "3": {
+        "number": 3,
+        "name": "RT FRANCE",
+        "language": "FR",
+        "url": "http://rt-france.secure.footprint.net/1107.m3u8?streamType=live",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/9e/RT_France.svg/1024px-RT_France.svg.png"
+           },
+    "4": {
+        "number": 4,
+        "name": "STYLE",
+        "language": "FR",
+        "url": "https://tv5styleen-i.akamaihd.net/hls/live/631650/tv5styleen/tv5style_eng_1200.m3u8",
+        "logo": "https://www.actu-france.com/wp-content/uploads/2015/04/TV5-Monde-Style-HD.jpg"
+        },
+    "5": {
+        "number": 5,
+        "name": "TV5 MONDE",
+        "language": "FR",
+        "url": "http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8",
+        "logo": "https://seeklogo.com/images/T/TV5-logo-C5F798F4E4-seeklogo.com.gif"
+        },
+    "6": {
+        "number": 6,
+        "name": "France24",
+        "language": "FR",
+        "url": "http://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8?streamType=live",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Logos_FRANCE24_RVB_2013.svg/1200px-Logos_FRANCE24_RVB_2013.svg.png"
+            },
+    "7": {
+        "number": 7,
+        "name": "REDBULL",
+        "language": "EN",
+        "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8?xtreamiptv.m3u8?streamType=live",
+        "logo": "https://d3g9pb5nvr3u7.cloudfront.net/sites/5581c33e4f73705f2f7791db/1420915272/256.png"
+            },
+    "8": {
+        "number": 8,
+        "name": "RT FRANCE",
+        "language": "FR",
+        "url": "http://rt-france.secure.footprint.net/1107.m3u8?streamType=live",
+        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/9e/RT_France.svg/1024px-RT_France.svg.png"
+            },
+    "9": {
+        "number": 9,
+        "name": "STYLE",
+        "language": "FR",
+        "url": "https://tv5styleen-i.akamaihd.net/hls/live/631650/tv5styleen/tv5style_eng_1200.m3u8",
+        "logo": "https://www.actu-france.com/wp-content/uploads/2015/04/TV5-Monde-Style-HD.jpg"
+        },
+    "10": {
+        "number": 10,
+        "name": "TV5 MONDE",
+        "language": "FR",
+        "url": "http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8",
+        "logo": "https://seeklogo.com/images/T/TV5-logo-C5F798F4E4-seeklogo.com.gif"
+        }
+}
