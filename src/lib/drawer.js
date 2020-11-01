@@ -8,6 +8,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
+import fs from 'fs';
+import parser from 'iptv-playlist-parser';
 
 const drawerWidth = 240;
 
@@ -37,7 +39,9 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function ResponsiveDrawer({onSelectFlux}) {
-  // const { window } = props;
+  // const playlist = fs.readFileSync('../playlist.m3u', { encoding: 'utf-8'});
+  // const result = parser.parse(playlist);
+  // console.log ('result',result);
   const classes = useStyles();
   const channels = require('../tv.json');
   
