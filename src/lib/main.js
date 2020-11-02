@@ -1,31 +1,37 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import { makeStyles } from '@material-ui/core/styles';
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  home: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-}));
+import Files from 'react-files';
+import styles from './style.module.css';
+
+console.log(styles);
 
 function NoChannel() {
-  const classes = useStyles();
-  return <div className={classes.home}>
+  return <div className={styles.dropFile}>
     <h1>Bienvenue !</h1>
+    <span>
+        <Files
+          className="files-dropzone"
+          onChange={file => {
+            console.log(file)
+          }}
+          onError={err => console.log(err)}
+          accepts={['.m3u']}
+          multiple
+          maxFiles={3}
+          maxFileSize={10000000}
+          minFileSize={0}
+          clickable
+        >
+          Drop files here or click to upload
+        </Files>
+      </span>
     </div>;
 };
 
 function TvChannel({flux}) {
-  const classes = useStyles();
-  return   <div className={classes.root}>
-  <ReactPlayer className="player-wrapper" url={flux} controls playing width='99%' height='99%' autoPlay={true}/>
-</div>
+  return <div className={styles.root}>
+    <ReactPlayer className="player-wrapper" url={flux} controls playing width='99%' height='99%' autoPlay={true}/>
+  </div>
 };
 
 export default function Main({flux}) {

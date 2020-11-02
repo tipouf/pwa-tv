@@ -1,0 +1,21 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: 'center';
+}
+
+.test {
+    width: 100%;
+}
+
+.dropFile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: calc(100% - 240px);
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    height: 100%;
+    left: 240px;
+}
