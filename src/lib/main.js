@@ -1,18 +1,34 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Files from 'react-files';
-import styles from './style.module.css';
+import "./main.css";
+import m3u8 from "m3u8";
+import fileReaderStream from "filereader-stream";
+import Immutable, { List } from "immutable";
 
-console.log(styles);
+const styles = {
+  dropzone: {
+    display: "flex",
+    alignItems: "center",
+    padding: 10,
+    borderWidth: 2,
+    borderColor: "#666",
+    borderStyle: "dashed",
+    borderRadius: 5,
+  }
+}
+
 
 function NoChannel() {
-  return <div className={styles.dropFile}>
+  return <div className= "dropFile">
     <h1>Bienvenue !</h1>
     <span>
         <Files
           className="files-dropzone"
           onChange={file => {
-            console.log(file)
+            var contentFile = file[0];
+            const parser = m3u8.createStream();
+            console.log('test',fileReaderStream(contentFile).pipe(parser));
           }}
           onError={err => console.log(err)}
           accepts={['.m3u']}
@@ -29,8 +45,8 @@ function NoChannel() {
 };
 
 function TvChannel({flux}) {
-  return <div className={styles.root}>
-    <ReactPlayer className="player-wrapper" url={flux} controls playing width='99%' height='99%' autoPlay={true}/>
+  return <div className= "root">
+    <ReactPlayer className="player-wrapper" url={flux} controls playing width='99.5%' height='99.5%' autoPlay={true}/>
   </div>
 };
 

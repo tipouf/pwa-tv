@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: '50%'
   },
   content: {
-    flexGrow: 1,
+    flex: 1,
     padding: theme.spacing(3),
   },
 }));
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 export default function ResponsiveDrawer({onSelectFlux}) {
   // var fs = require('fs');
   // const playlist = fs.readFileSync('./playlist.m3u', { encoding: 'utf-8'});
-  // const result = playlist.parse(playlist);
+  //const result = playlist.parse(playlist);
   const classes = useStyles();
   const channels = require('../tv.json');
   
